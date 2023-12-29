@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&family=Fjalla+One&family=Great+Vibes&family=Nosifer&family=Pacifico&family=Playpen+Sans:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Dancing+Script:wght@600&family=Fjalla+One&family=Great+Vibes&family=Merriweather:wght@300&family=Nosifer&family=Pacifico&family=Playpen+Sans:wght@800&family=Young+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Dancing+Script:wght@600&family=Figtree:wght@300&family=Fjalla+One&family=Great+Vibes&family=Lexend:wght@200;400&family=Merriweather:wght@300&family=Nosifer&family=Pacifico&family=Playpen+Sans:wght@800&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head><style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .hero{
+        width: 100%;
+      min-height:  90vh;
+      
+      background-image: url(wepik-export-20231224145713owoq.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      
+      color: white;
+    }
+    ::-webkit-scrollbar{
+
+width: 12px;
+
+}
+::-webkit-scrollbar-thumb{
+
+background:rgb(170,4,4);
+border-radius: 6px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+ background: rgb(214, 0, 0);
+ 
+
+}
+.tasty{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    padding: -50px;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.bag i{
+    position: absolute;
+    right: 30px;
+    top:-3px;
+    color: #eee5e5;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom:5px ;
+    
+}
+.bag .user{
+    position: absolute;
+    right: 70px;
+    top:-3px;
+    color: #eee5e5;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom:5px ;
+    
+}
+
+nav {
+                display: flex;
+                justify-content: center;
+                background-color: rgb(170, 4, 4);
+              }
+          
+              nav a {
+                color: white;
+                text-decoration: none;
+                padding: 14px 20px;
+                text-align: center;
+                font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+              }
+          
+              nav a:hover {
+                color: #1b1b1b;
+              }
+
+             
+
+.login-container {
+    text-align: center;
+    width: 390px;
+    height: 50vh;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    position: absolute;
+    top: 170px;
+    border:1px solid #fff;
+    left: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    outline: none;
+    width: 320px;
+    position: absolute;
+   background-color: transparent;
+   backdrop-filter: blur(4px);
+    left: 30px;
+}
+input:focus{
+    transform: scale(1.1);
+}
+button {
+    padding: 10px;
+    background-color: rgb(170, 4, 4);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    width: 330px;
+    font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+}
+
+button:hover {
+    background-color: rgb(214, 0, 0);
+    transform: scale(1.1);
+}
+.nam{
+    width: 320px;
+    position: absolute;
+    left: 32px;
+    top: 90px;
+}
+.mot{
+    width: 320px;
+    position: absolute;
+    left: 32px;
+    top: 150px;
+}
+.mot::placeholder{
+    font-size: 17px;
+    color: #ebe8e8;
+}
+.nam::placeholder{
+    font-size: 17px;
+    color: #ebe8e8;
+}
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+}
+.boxuser{
+    color: #ffffff;
+    position: absolute;
+    left: 305px;
+    top: 95px;
+}
+.boxuser i{
+    font-size: 25px;
+}
+.boxmot{
+    color: #ffffff;
+    position: absolute;
+    left: 305px;
+    top: 153px;
+}
+.boxmot i{
+    font-size: 25px;
+}
+.siin{
+    text-decoration: none;
+    color: rgb(170, 4, 4);
+    font-size: 18px;
+    font-weight: 800;
+}
+.siin:hover{
+color: rgb(214, 0, 0);
+}
+.sin{
+    position: absolute;
+    top: 260px;
+    font-size: 17px;
+    left: 75px;
+}
+.follow{
+                        color:rgb(170, 4, 4);
+                        font-size: 27px;
+                        font-weight: 600;
+                        font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+                        position: absolute;
+                        left: 140px;
+                        bottom: 100px;
+                    }   
+   
+               .a1 i{
+                position: absolute;
+                bottom: 65px;
+                left: 140px;
+               }
+               .a2 i{
+                position: absolute;
+                bottom: 65px;
+                left: 180px;
+               }
+               .a3 i{position: absolute;
+                bottom: 65px;
+                left: 220px;
+               }
+               .a4 i{
+                position: absolute;
+                bottom: 65px;
+                left: 260px;
+               }
+.contacta{
+                        position: absolute;
+                        top: 585px;
+                        background-color: rgb(15, 15, 15);
+                        width: 100%;
+                        height: 60vh;
+                    }
+                    .contact{
+                        color:rgb(170, 4, 4);
+                        font-size: 27px;
+                        font-weight: 600;
+                        font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+                        position: absolute;
+                        left: 140px;
+                        bottom: 290px;
+                    }
+                    .infofind1{
+                        color: rgb(214, 205, 205);
+                       font-size: 15px;
+                        position: absolute;
+                        
+font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+
+                        left: 150px;
+                        bottom: 260px;
+                        
+
+                    }
+                    .infofind2{
+                        color: rgb(214, 205, 205);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 150px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 235px;
+                    }
+                    .infofind3{
+                        color: rgb(214, 205, 205);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 150px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 210px;
+                    }
+                    .infofind4{
+                        color:  rgb(214, 205, 205);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 150px;
+                        bottom: 185px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                    }
+                    .infofind5{
+                        color: rgb(228, 219, 219);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 150px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 160px;
+                    }
+                    .hours{
+                        color:rgb(170, 4, 4);
+                        font-size: 27px;
+                        font-weight: 600;
+                        font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+                        position: absolute;
+                        left: 500px;
+                        bottom: 290px;
+                    }
+                    nav {
+                display: flex;
+                justify-content: center;
+                
+              }
+          
+              nav a {
+                color: rgb(241, 239, 239);
+                text-decoration: none;
+                padding: 14px 20px;
+                text-align: center;
+                cursor: pointer;
+                font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+              }
+              nav a:hover{
+                color: #1b1b1b;
+              }
+              .mandy{
+                color: rgb(236, 228, 228);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 510px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 265px;
+              }
+.P9M{
+    color: rgb(204, 191, 191);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 520px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 240px;
+}
+.sunday{
+                color: rgb(236, 228, 228);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 510px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 215px;
+              }    
+              .PM{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 520px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 190px;
+              }   
+              .call{
+                color:rgb(170, 4, 4);
+                        font-size: 27px;
+                        font-weight: 600;
+                        font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+                        position: absolute;
+                        left: 840px;
+                        bottom: 290px;
+              }  
+              .P9A{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 850px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 260px;
+              }  
+              .PA{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 850px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 230px;
+              }
+              .categores{
+                color:rgb(170, 4, 4);
+                        font-size: 27px;
+                        font-weight: 600;
+                        font-family: 'Alfa Slab One', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+                        position: absolute;
+                        left: 1090px;
+                        bottom: 290px;
+              }  
+              .info1{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 1100px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 260px;
+              }
+              .info2{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 1100px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 240px;
+              }
+              .info3{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 1100px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 220px;
+              }
+              .info4{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 1100px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 200px;
+              }
+              .info5{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 1100px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 180px;
+              }
+              .info6{
+                color: rgb(192, 179, 179);
+                       font-size: 15px;
+                        position: absolute;
+                        left: 1100px;
+                        font-family: 'Lexend', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nosifer', sans-serif;
+
+font-family: 'Young Serif', serif;
+                        bottom: 160px;
+              }
+              a i{
+               color: rgb(215, 217, 219);
+               font-size: 30px;
+                
+              }
+              .akhiran{
+                position: absolute;
+                top: 970px;
+                background-color: #201f1f;
+                width: 100%;
+                height: 10vh;
+              }
+              .copyright{
+                color: #ffffffd0;
+                text-align: center;
+                font-size: 16px;
+                position: absolute;
+                bottom: 20px;
+                left: 430px;
+              }
+              .copyright i{
+                font-size: 15px;
+
+              }
+                
+
+</style>
+<body>
+    <section class="hero">
+        <nav>
+            <h3 class="tasty">Casa Nostra  </h3>
+            <a href="pastry.html">Home</a>
+            
+            <a class="mani" href="menu.html">Menu</a>
+            <a class="about" href="about.html">About</a>
+            <a href="Reservation.html">Reservation</a>
+            <div class="bag">
+                <a href="#" class="user"><i class='bx bx-user'></i></a>
+                <a class="hide" id="open" href="#"><i  class='bx bx-cart'></i></a>
+                
+            </div>
+        
+          </nav>
+          <div class="login-container">
+            <h2 >Login</h2>
+            <form action="process_login.php" method="post">
+                
+                <input type="text" id="username" name="username" class="nam" placeholder="Username" required> <div class="boxuser"><i class='bx bx-user'></i></div>
+    
+                
+                <input type="password" id="password" name="password" class="mot" placeholder="Password" required><div class="boxmot"><i class='bx bx-lock-alt' ></i></div>
+    
+    
+                <button type="submit">Login</button>
+                <p class="sin">Don't have an account? <a href="signup.html" class="siin">Sign Up</a></p>
+            </form>
+    </section>
+    <section class="contacta">
+        <h2 class="contact">Find Us</h2>
+        <p class="infofind1">134 Rue ATTABARI </p>
+        <p class="infofind2">Lot CHANTIMAR </p>
+        <p class="infofind3">Imm ATTABARI</p>
+        <p class="infofind4">Business Center maarif </p>
+        <p class="infofind5">CASABLANCA</p>
+        <h2 class="hours">Hours</h2>
+        <h3 class="mandy">Monday-Saturday</h3>
+        <p class="P9M">10am-12pm</p>
+        <h3 class="sunday">sunday</h3>
+        <p class="PM">12am-12pm</p>
+        <h2 class="call">Call Us</h2>
+        <h3 class="P9A">0522949645</h3>
+        <h3 class="PA">0522943789</h3>
+        <h2 class="categores">Categories</h2>
+        <p class="info1">Salad</p>
+        <p class="info2">Pizza</p>
+        <p class="info3">Pasta</p>
+        <p class="info4">Burger</p>
+        <p class="info5">Drinks</p>
+        <p class="info6">Dessert</p>
+        <h2 class="follow">Follow Us</h2>
+        <a class="a1" href="https://www.facebook.com/profile.php?id=61553260586730"><i class='bx bxl-facebook-circle' ></i></a>
+        <a class="a2" href="#"><i class='bx bxl-instagram' ></i></a>
+        <a class="a3" href="http://www.youtube.com/@user-ur6fk1nl4e"><i class='bx bxl-youtube' ></i></a>
+        <a  class="a4" href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        
+        
+        </section>
+        <section class="akhiran">
+            <p class="copyright">Copyright <i class='bx bx-copyright' ></i> 2023.All Rights Reserved.Designed By Soukaina Abouelmir</p>
+        </section>
+        
+        
+            
+             
+</body>
+</html>

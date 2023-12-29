@@ -1,0 +1,32 @@
+.iamge{
+    width: 100%;
+  min-height:  85vh;
+  backdrop-filter: blur(50px);
+  background-image: url(wepik-export-202312112144508exS.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  
+  
+}
+<h1 class="L1">Life is a <br>
+  combination of<br>
+  magic and <span>pizza</span></h1>
+  let open=document.getElementById('open');
+let close=document.getElementById('close')
+let containerr=document.querySelector('.containerr');
+close.onclick=function(){
+    containerr.classList.add('hide');
+    this.classList.add('hide');
+    open.classList.remove('hide');
+}
+
+open.onclick=function(){
+    this.classList.add('hide');
+   close.classList.remove('hide');
+    containerr.classList.remove('hide');
+}
